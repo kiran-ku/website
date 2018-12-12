@@ -1,0 +1,686 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Kestrel Innovations</title>
+		<link rel="icon" type="image/ico" href="img/logo.png" />
+
+  		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+  		<meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+   	 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css family=Roboto:400,300|Raleway:300,400,900,700italic,700,300,600">
+  		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    	        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+  		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  		<link rel="stylesheet" type="text/css" href="css/animate.css">
+  		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+                <!--Styles for products sliding-->
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  		<!--Disable right click,copy,cut,paste options-->
+  		<script src="jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+    			//Disable cut copy paste
+    			$('body').bind('cut copy paste', function (e) {
+        			e.preventDefault();
+    			});
+   
+    			//Disable mouse right click
+    			$("body").on("contextmenu",function(e){
+        			return false;
+    			});
+			});
+
+        	//Function to popup team page
+        	function div_show() {
+          		document.getElementById('team1').style.display = "block";
+        	}
+        	//Function to Hide team page
+        	function div_hide(){
+          		document.getElementById('team1').style.display = "none";
+        	}
+                       <!--Function for loader-->
+                       var myVar;
+
+			function myFunction() {
+    			myVar = setTimeout(showPage, 2000);
+			}
+
+			function showPage() {
+  				document.getElementById("loader").style.display = "none";
+  				document.getElementById("myDiv").style.display = "block";
+			}
+                        
+                         //function for product text slider.              
+      $(document).ready(function () {
+          //rotation speed and timer
+          var speed = 6000;
+          var run = setInterval(rotate, speed);
+          var slides = $('.slide');
+          var container = $('#slides ul');
+          var elm = container.find(':first-child').prop("tagName");
+          var item_width = container.width();
+          var previous = 'prev'; //id of previous button
+          var next = 'next'; //id of next button
+          slides.width(item_width); //set the slides to the correct pixel width
+          container.parent().width(item_width);
+          container.width(slides.length * item_width); //set the slides container to the correct total width
+          container.find(elm + ':first').before(container.find(elm + ':last'));
+          resetSlides();
+          //if user clicked on prev button
+          $('#buttons a').click(function (e) {
+              //slide the item
+              if (container.is(':animated')) {
+                  return false;
+              }
+              if (e.target.id == previous) {
+                  container.stop().animate({
+                      'left': 0
+                  }, 1500, function () {
+                      container.find(elm + ':first').before(container.find(elm + ':last'));
+                      resetSlides();
+                  });
+              }
+              if (e.target.id == next) {
+                  container.stop().animate({
+                      'left': item_width * -2
+                  }, 1500, function () {
+                      container.find(elm + ':last').after(container.find(elm + ':first'));
+                      resetSlides();
+                  });
+              }
+              //cancel the link behavior            
+              return false;
+          });
+          //if mouse hover, pause the auto rotation, otherwise rotate it    
+          container.parent().mouseenter(function () {
+              clearInterval(run);
+          }).mouseleave(function () {
+              run = setInterval(rotate, speed);
+          });
+          function resetSlides() {
+              //and adjust the container so current is in the frame
+              container.css({
+                  'left': -1 * item_width
+              });
+          }
+      });
+      //a simple function to click next link
+      //a timer will call this function, and the rotation will begin
+      function rotate() {
+          $('#next').click();
+      }
+		</script>
+
+	</head>
+	<body oncontextmenu="return false;" onload="myFunction()" style="margin:0;">
+		<div id="loader"></div>
+  		<div id="myDiv">
+    		<!--HEADER-->
+    		<div class="header">
+     			<div class="bg-color">
+        			<header id="main-header">
+          				<nav class="navbar navbar-default navbar-fixed-top">
+            				<div class="container">
+              					<div class="navbar-head">
+              						<strong>
+                						<a class="navbar-brand"><img src="./img/logo.png" width="160px" height="80px"/></span></a>
+              						</strong>
+              					</div>
+              					<div class="collapse navbar-collapse" id="myNavbar">
+                					<ul class="nav navbar-nav navbar-right">
+                  						<li class="active"><a href="#main-header">Home</a></li>
+                  						<li class=""><a href="#tech">Technology</a></li>
+                  						<li class=""><a href="#product">Products</a></li>
+                  						<li class=""><a href="#career">Careers</a></li>
+                  						<li class=""><a href="#resource">Resources</a></li>
+                    					<li class=""><a href="#about">About Us</a></li>                								
+										<li class=""><a href="#contact">Contact Us</a></li>
+                					</ul>
+              					</div>
+            				</div>
+          				</nav>
+        			</header>
+
+        			<!--Main page-->
+        			<div class="wrapper">
+          				<div class="container">
+            				<div class="row">
+              					<div class="banner-info wow fadeIn delay-05s">
+                					<h1 class="bnr-title">Your spot is spot on!</h1>
+                					<p class="bnr-para">Designing and developing core technologies for geo positioning and guidance.</p>
+
+                               		<!--<div class="news">
+                                  		<marquee onMouseOver="this.scrollAmount=0" onMouseOut="this.scrollAmount=2" scrollamount="2" direction="up" loop="true" width="60%">
+                                    		<center>
+                                      			<font color="#ffffff" size="+2">Welcome to Kestrel Innovations</font>
+                                    		</center>
+                                  		</marquee>
+                                	</div>-->
+              					</div>
+            				</div>
+          				</div>
+        			</div>
+        			<!--Main page ends-->
+      			</div>
+    		</div>
+    		<!--Header ends-->
+                
+        	<!--Technology page--> 
+        	<section id="tech" class="section-padding wow fadeInUp delay-05s">
+      			<div class="container">
+        			<div class="row">
+          				<div class="col">
+          					<div id="demo">
+          						<div class="demo1">
+            						<h2 class="tech-title">Location aware technologies for all things moving across Land, Air and Sea</h2>
+            						<div class demo2>
+            							<p>India&#39;s pioneers in developing products in mid-level 	range military 
+            							and civilian products aiming to provide world class positioning and guidance solutions tailored to the needs of our customers. We are innovators who strive to manufacture world class products made in India. We aspire to reorganize and reorient the structure and direction of research and development in the 	technology space in India.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="container">
+  									<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    									<!-- Indicators -->
+    									<ol class="carousel-indicators">
+      										<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      										<li data-target="#myCarousel" data-slide-to="1"></li>
+      										<li data-target="#myCarousel" data-slide-to="2"></li>
+      										<li data-target="#myCarousel" data-slide-to="3"></li>
+      										<li data-target="#myCarousel" data-slide-to="4"></li>
+      										<li data-target="#myCarousel" data-slide-to="5"></li>
+      										<li data-target="#myCarousel" data-slide-to="6"></li>
+      										<li data-target="#myCarousel" data-slide-to="7"></li>
+    									</ol>
+
+    									<!-- Wrapper for slides -->
+    									<div class="carousel-inner">
+      										<div class="item active">
+        										<img src="./img/slider/s1.jpg" alt="s1" height="100%" width="100%" />
+      										</div>
+    
+      										<div class="item">
+        										<img src="./img/slider/s2.jpg" alt="s2"  height="100%" width="100%" />
+      										</div>
+
+      										<div class="item">
+        										<img src="./img/slider/s3.jpg" alt="s3"  height="100%" width="100%" />
+      										</div>
+
+      										<div class="item">
+        										<img src="./img/slider/s4.jpg" alt="s4"  height="100%" width="100%" />
+      										</div>
+
+      										<div class="item">
+        										<img src="./img/slider/s5.jpg" alt="s5"  height="100%" width="100%" />
+      										</div>
+
+      										<div class="item">
+        										<img src="./img/slider/s6.jpg" alt="s6"  height="100%" width="100%" />
+      										</div>
+
+      										<div class="item">
+        										<img src="./img/slider/s7.jpg" alt="s7"  height="100%" width="100%" />
+      										</div>
+
+      										<div class="item">
+        										<img src="./img/slider/s8.jpg" alt="s8"  height="100%" width="100%" />
+      										</div>
+
+    									</div>
+
+    									<!-- Left and right controls -->
+    									<div class="slide-con">
+    									<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      										<span class="glyphicon glyphicon-chevron-left"></span>
+      										<span class="sr-only">Previous</span>
+    									</a>
+    									<a class="right carousel-control" href="#myCarousel" data-slide="next">
+      										<span class="glyphicon glyphicon-chevron-right"></span>
+      										<span class="sr-only">Next</span>
+    									</a>
+    								</div>
+    								</div>
+  								</div>
+							</div>
+							<hr class="bottom-line">
+            			</div>
+        			</div>
+      			</div>
+    		</section>
+        	<!--technology ends-->
+
+        	<!--Products page-->
+    		<section id="product" class="section-padding wow fadeInUp delay-05s">
+      	            <div class="container">
+        		<div class="row">
+          		     <div class="col-md-12 text-left">
+            			<h2 >Our Products</h2>
+         	 	     </div>
+          		     <div id="carousel">
+              <div id="slides">
+                <ul>
+                  <li class="slide">
+                      <div class="quoteContainer">
+                        <span class="heading">Mantis</span>
+                        <p class="quote-phrase">
+                          <span class="quote-marks">"</span>
+                          A mission critical, information system that operates in the absence of servers or an established infrastructure. MANTIS works offline while analyzing local data that allows multiple users to communicate with each other in the field over a peer-to-peer communication protocol.
+                          <span class="quote-marks">"</span>
+                        </p>
+                      </div>
+                  </li>
+                  <li class="slide">
+                    <div class="quoteContainer">
+                      <span class="heading">Mongoose</span> 
+                      <p class="quote-phrase">
+                        <span class="quote-marks">"</span>
+                        Mongoose is a minefield recording observation and monitoring system that aids in detecting and planning automated and manual minefields. It has the ability to share information with multiple users in the field over a peer to peer communication protocol even in the absence of GPS
+                        <span class="quote-marks">"</span>
+                      </p>
+                    </div>
+                  </li>
+                    <li class="slide">
+                      <div class="quoteContainer">
+                        <span class="heading" style="margin-left: 300px;">Precision Guidance kit</span>
+                        <p class="quote-phrase">
+                          <span class="quote-marks">"</span>
+                          A precision guided kit for 105mm and 155mm artillery shells and 120mm mortar munition that reduce the number of munitions fired to engage a target. Standard unguided shells and mortars have been proven to be an inefficient solution to deploy in combat due to obscured line of sight and particularly blanket firing.
+                          <span class="quote-marks">"</span>
+                        </p>
+                      </div>
+                    </li>
+                    <li class="slide">
+                      <div class="quoteContainer">
+                        <span class="heading">PINPOINT</span>
+                        <p class="quote-phrase">
+                          <span class="quote-marks">"</span>
+                          Introducing India's first CORS system for precision positioning. It enhances coordinate approach by a few centimeters both, horizontally and vertically. The network allows equipment, machinery and technology to accurately determine coordinates for positioning and guidance apps.
+                          <span class="quote-marks">"</span>
+                        </p>
+                      </div>
+                    </li>
+                    <li class="slide">
+                      <div class="quoteContainer">
+                        <span class="heading">MARG</span>
+                        <p class="quote-phrase">
+                          <span class="quote-marks">"</span>
+                          We are developing a compact, low cost, survey grade GNSS receiver that has(Multi-constellation support (IRNSS, GPS, Galileo, GLONASS, BeiDou), Ability to track up to 4 constellations at a time, Inbuilt SBAS and RTK support (optional), Online and offline maps, 4G/3G/GPRS cellular network support).
+                          <span class="quote-marks">"</span>
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="btn-bar">
+                  <div id="buttons">
+                    <a id="prev" href="#"><span id ="prev">< Prev</span></a>
+                    <a id="next" href="#"><span id ="next">Next ></span></a> 
+                  </div>
+              </div>
+            </div>
+                         <hr class="bottom-line">
+                     </div>
+                  </div>
+    		</section>
+    		<!--Product page ends-->
+
+    		<!--Careers page starts-->
+    		<section id="career" class="wow fadeInUp delay-05s">
+      			<div class="bg-testicolor">
+        			<div class="container">
+          				<div class="row">
+            				<div class="career-item">
+            					<h1 style="text-align: left;">Careers</h1>
+              					<ul class="bxslider">
+                					<li>
+                    					<p style="font-size: 22px; width: 980px; height: auto; position: relative;">Do you believe that technology is the future of 
+                                			our world? If so, you have arrived at the right place. At Kestrel, we innovate all things under the umbrella 	of 
+                                			technology. If you have an idea, we make sure it does not remain an idea for too long and make it happen.
+                    						<br/><br/>
+                    						All we need from you is to share our enthusiasm, our love for technology, integrity and the drive to 
+                    						create and co create. If you are as enthusiastic as we are, about taking products that are developed 
+                    						in India to the world, write in to us at <strong><u>careers@kestrelinnovations.com</u></strong> and you’ll hear back from us!
+                    					</p>
+                    				</li>
+                				
+                                              <!--  <li>
+                						<div class="positions">
+                    						<form name= "positions" action="">
+                    							<label>Name:</label>
+                    							<input type="text" name="name" placeholder="Your name" required="" style="position: relative; margin:-100px 0px 0px 100px; >
+
+							                <label style="position: absolute; margin-left: 65px; margin-top: -200px;">Phone:</label>
+                    						<input type="text" name="phone" placeholder="Your Phone" required="" style="position: absolute; margin-left: 180px; margin-top: 10px;"><br/>
+
+                    							<label>Email:</label>
+                    							<input type="email" name="email" placeholder="Your Email" required="" style="position: absolute; margin-top: 10px;">
+
+                    							<label style="position: relative; margin-left: 470px; margin-top: 10px;">Position:</label>
+                    							<select style="position: relative; margin-left: 14px; margin-top: 10px;">
+                    								<option>Select</option>
+                    								<option>Software Engineer</option>
+                    								<option>Senior Software Engineer</option>
+                    								<option>Senior Mechanical Engineer</option>
+                    							</select><br/>
+
+                    							<label style="position: relative; margin-left:0px;">Experience:</label>
+                    							<select style="position: relative; margin-left:45px;">
+                    								<option>Select</option>
+                    								<option>0-1 Year</option>
+                    								<option>1-2 Years</option>
+                    								<option>2-3 Years</option>
+                    								<option>3 or More Years</option>
+                    							</select>
+
+                    							<label style="position: relative; margin-left: 70px; margin-top: 10px;">Skills:</label>
+                    							<p style="font-size: 16px; margin-left: 40px; margin-top: 16px; position: relative; color: #fff;">Skills separated by comma(,)</p><br/>
+
+                    							<label style="position: relative; margin-left: 0px; margin-top: 10px;">Upload Resume:</label>
+                    							<input type="file" name="file" value="Select" style="position: relative; margin-left: 180px; margin-top: -35px; color: #fff;"/>
+
+                    							<div style="position: relative; margin-left: 180px; margin-top: 80px;">
+                    								<button type="submit" name="submit" class="btn btn-warning">Apply Now</button>&nbsp;&nbsp;&nbsp; <button type="reset" name="reset" class="btn btn-warning">Reset</button>
+                    							</div>
+
+                    							<textarea cols="30" rows="16" style="position: relative; margin-left: 662px; margin-top: -150px;"></textarea><br/>
+                    						</form>
+                    					</div>
+                					</li>-->
+
+              					</ul>
+            				</div>
+          				</div>
+        			</div>
+                                <hr class="bottom-line">
+      			</div>
+    		</section>
+    		<!--Career page ends-->
+
+    		<!--Resource page starts-->
+    		<section id="resource" class="section-padding wow fadeInUp delay-05s">
+      		<div class="container">
+        		<div class="row">
+          			<div class="col-md-12">
+            			<h2 class="resource-title">Interesting Reads</h2>
+          			</div>
+
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+            			<div class="resource-sec">
+              				<div class="resource-info">
+                				<p class="res-head"><u>Seventh satellite launch of IRNSS</u></p>
+                				<p class="res1">India launched seventh satellite under the Indian Regional Navigation Satellite System (IRNSS)— also called NavIC — adding to the existing constellation of six fully operational satellites.<br/>
+                				
+                				<a href="https://timesofindia.indiatimes.com/india/satellites-are-in-the-sky-but-long-way-to-go-before-average-indians-get-desi- gps/articleshow/64506628.cms?">Read more →</a></p>
+              				</div>
+            			</div>
+          			</div>
+
+<!--
+          			<div class="col-md-4 col-sm-6 col-xs-12">
+            			<div class="resource-sec">
+              				<div class="resource-info">
+                				<h2>Resource2</h2>
+                				<p>
+                					Abstract of resource paper2<br/>
+                					Do you believe that technology is the future of our world? If so, you have arrived at the right place. 
+                    				At Kestrel, we innovate all things under the umbrella 	of technology. If you have an idea, we make 
+                   					sure it does not remain an idea for too long and make it happen.
+                				</p>
+               					<a href="#">Read more →</a>
+           					</div>
+           				</div>
+       				</div>
+          			<div class="col-md-4 col-sm-6 col-xs-12">
+            			<div class="resource-sec">
+              				<div class="resource-info">
+                				<h2>Resource3</h2>
+               					<p>
+               						Abstract of resource paper3<br/>
+               						Do you believe that technology is the future of our world? If so, you have arrived at the right place. 
+                   					At Kestrel, we innovate all things under the umbrella 	of technology. If you have an idea, we make 
+                   					sure it does not remain an idea for too long and make it happen.
+                				</p>
+                				<a href="#">Read more →</a>
+              				</div>
+            			</div>
+          				</div>
+                -->
+                                       <div class="res-line"><hr class="bottom-line"></div>
+        			</div>
+      			</div>
+    		</section>
+    		<!--Resource page ends-->
+
+    		<!--About page-->
+    		<section id="about" class="wow fadeInUp delay-05s">
+      		<div class="bg-testicolor">
+        		<div class="container">
+          		<div class="row">
+            		<div class="testimonial-item">
+            			<h1>About Us</h1>
+              		<p>We are innovators who create, design and develop core technologies in geo-positioning and guidance. 	We begin at conceptualization and along the journey co-create with like minded
+                    partners who help us arrive at the finished product.<br/><br/><br/>
+              			Head quatered in Bengaluru&#44;Kestrel predominently engages in improove operational effectiveness&#44;enhance
+           				  situational awareness&#44;safety and security to support precise positioning&#44;navigation and timing superiority.
+								  </p>
+           				<div class="team">
+                    <h2 > Our team</h2>
+                    <div class="triangle-down" onclick="div_show()"></div>
+                  </div>
+                  <div id="team1">
+                    <img id="close" src="./img/cl.jpg" width="30" height="30" onclick ="div_hide()" style="float: right; margin: 0px 0px 8px 0px;position: relative;">
+           					<div class="desg1">
+           					  <div class="des-block">
+           						 <h4> Nikhil Thard</h4>
+           						 <h5> Cheif Executive Officer, Co Founder</h5>
+           						 <h6>Email: nikhil@kestrelinnovations.com</h6>
+  										 <div class="over-text">
+  												<h5>Image comming soon</h5>	
+  										 </div>
+  										</div>
+									  </div>
+								      
+									<div class="desg2">
+           						 		<div class="des-block">
+           							  		<h4> Satheesh S Nair</h4>
+           							  		<h5> Chief Strategy Officer, Co Founder</h5>
+           							  		<h6>Email: satheesh.nair@kestrelinnovations.com</h6>
+  											<div class="over-text">
+  												<h5>Image comming soon</h5>	
+  											</div>
+  										</div>
+									</div>
+								    
+									<div class="desg3">
+           						 		<div class="des-block">
+           							  		<h4> Mahadev</h4>
+           							  		<h5> Cheif Technology Officer, Co Founder</h5>
+           							  		<h6>Email: mahadev@kestrelinnovations.com</h6>
+  											<div class="over-text">
+  												<h5>Image comming soon</h5>	
+  											</div>
+  										</div>
+									</div>
+								    
+									<div class="desg4">
+           					    		<div class="des-block">
+           						    		<h4> Purbasha</h4>
+           						    		<h6> Operations and Business Development</h6>
+           						    		<h6>Email:purbasha@kestrelinnovations.com</h6>
+  											<div class="over-text">
+  												<h5>Image comming soon</h5>	
+  											</div>
+  										</div>
+									</div>
+								    
+									<div class="desg5">
+           								<div class="des-block">
+           									<h4> Wijai</h4>
+           									<h5>Design Engineer-Mechanical</h5>
+           									<h6>Email: wijai@kestrelinnovations.com</h6>
+  											<div class="over-text">
+  												<h5>Image comming soon</h5>	
+  											</div>
+  										</div>
+									</div>
+							    	<div class="desg6">
+           								<div class="des-block">
+           									<h4> Tarandeep</h4>
+           									<h5> Aerodynamicist</h5>
+           									<h6>Email:santosh@kestrelinnovations.com</h6>
+  											<div class="over-text">
+  												<h5>Image comming soon</h5>	
+  											</div>
+  										</div>
+								    </div>
+								    <div class="desg7">
+           								<div class="des-block">
+           									<h4> Santosh</h4>
+           									<h5>Design Engineer-Electronics</h5>
+           									<h6>Email:santosh@kestrelinnovations.com</h6>
+  											<div class="over-text">
+  												<h5>Image comming soon</h5>	
+  											</div>
+  										</div>
+								    </div>
+								    <div class="desg8">
+           								<div class="des-block">
+           									<h4> Joshy</h4>
+           									<h5> Accounts</h5>
+           									<h6>Email: joshy@kestrelinnovations.com</h6>
+  											<div class="over-text">
+  												<h5>Image comming soon</h5>	
+  											</div>
+  										</div>
+								    </div>
+								    <div class="desg9">
+           								<div class="des-block">
+           									<h4> Niraj</h4>
+           										<h5> Design Engineer-Software</h5>
+           									<h6>Email: niraj@kestrelinnovations.com</h6>
+  											<div class="over-text">
+  												<h5>Image comming soon</h5>	
+  											</div>
+  										</div>
+									</div>
+									<div class="desg10">
+           								<div class="des-block">
+           									<h4> Ravi Prakash</h4>
+           									<h5> Design Engineer-Software</h5>
+           									<h6> Email:ravi@kestrelinnovations.com</h6>
+  										    <div class="over-text">
+  											   <h5>Image comming soon</h5>	
+  										    </div>
+  									    </div>
+		   					        </div>
+									<div class="desg11">
+           								<div class="des-block">
+           									<h4> Kiran Kumar</h4>
+           									<h5> Web Designer</h5>
+           									<h6> Email: kiran@kestrelinnovations.com</h6>
+  											<div class="over-text">
+  												<h5>Image comming soon</h5>	
+  											</div>
+  										</div>
+									</div>
+									<div class="desg12">
+           								<div class="des-block">
+           									<h4> Anil</h4>
+           									<h5> Design Engineer-Software</h5>
+           									<h6> Email: anil@kestrelinnovations.com</h6>
+  											<div class="over-text">
+  											   <h5>Image comming soon</h5>	
+  											</div>
+  										</div>
+									</div>
+
+                	      			<div class="admin-sup">
+                    	    			<h3>Administrative Support</h3>
+                   		     			<div class="des-block">
+                   		       				<h4>Suresh</h4>
+                    	      				<h5>Administration Support</h5>
+                        				</div>
+                      				</div>
+                    			</div>
+							     </div>
+       					</div>
+                <hr class="bottom-line">
+       				</div>
+   				</div>
+    		</section>
+    		<!--About page ends-->
+
+    		<!--Contact page starts-->
+ 			  <section id="contact" class="section-padding wow fadeInUp delay-05s">
+      			<div class="container">
+        			<div class="row">
+        				<div class="col-md-12">
+            				<h2 class="contact-title pad-bt15">Contact US</h2>
+            				<p>We would love to hear from you&#33;</p>
+            				<hr style="position: relative; width:95%; margin-left:0px;background-color:gray;">
+          				</div>
+
+          				<div class="address">
+          					<label>Call Us</label>
+          						<i style="font-size:22px" class="fa"></i>&#9742;<br/>+91 9845280000<br/>+91 9901265256 <br/><br/>
+          					<label>Write To Us</label>
+ 							    <i style="font-size:22px" class="fa"></i>&#9993;<br/>contactus@kestrelinnovations.com <br/><br/>
+ 							<label>Find Us:</label>
+								<i style="font-size:22px" class="fa"></i><i class="fa fa-map-marker" aria-hidden="true"></i><br/>Edifice cube&#44;No P3&#38;P4&#44;Sector 12&#44;
+								    10<sup>th</sup> Main&#44;Jeevan Bhima Nagar main Road&#44; HAL 3<sup>rd</sup> Stage&#44;
+								    Bengaluru&#44;<br/>Karnataka&#44;India&#44;<br/>560075
+          				</div>
+          				<div class="form">
+          				    <form id="cform" name="cfrm" action='cont.php' method="post" target="cform1">
+                                                <table id = "shortages" >
+                                                    <thead>
+                                                         <tr><th><h2>Name: </h2></th><td> <input type="text" id="name" size="10" name="name" required=""> </input></td></tr>
+                                                         <tr><th><h2>Phone:</h2></th><td> <input type="number" id="phone" size="10" name="phone" required=""> </input></td></tr>
+                                                         <tr><th><h2>Email:</h2></th><td> <input type="email" id="email" name="email" required=""> </input> </td></tr>
+                                                         <tr><th><h2 style="margin-top: -50px;">Message:</h2></th><td> <textarea id="mesg" name="mesg" required="" style="height: 120px; margin-top: 20px;"> </textarea> </td></tr>
+                                                   </thead>
+                                               </table>
+                                             <button type="submit" name="mydrivers" id="button">Submit</button>  <button type="reset" name="mydrivers">Reset</button>
+                                           </form>
+                                           <iframe height="1" name="cform1" class="cform2"></iframe>
+          				</div>
+                                        <hr class="bottom-line">
+        			</div>
+      			</div>
+    		</section>
+    		<!--Cantact page ends-->
+
+    		<!--Footer-->
+    		<footer id="footer">
+      			<div class="container">
+        			<div class="row text-center">
+          				<p>&copy; http://www.kestrelinnovations.com. All Rights Reserved.</p>
+        			</div>
+      			</div>
+    		</footer>
+    		<!--Footer ends-->
+  		</div>
+  		<script src="js/jquery.min.js"></script>
+  		<script src="js/jquery.easing.min.js"></script>
+  		<script src="js/bootstrap.min.js"></script>
+  		<script src="js/wow.js"></script>
+  		<script src="js/jquery.bxslider.min.js"></script>
+  		<script src="js/custom.js"></script>
+  		<script src="contactform/contactform.js"></script>
+	</body>
+</html>

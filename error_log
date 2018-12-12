@@ -1,0 +1,94 @@
+[23-Aug-2018 00:03:15 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /home6/kestreli/public_html/admin/login.php on line 7
+[23-Aug-2018 00:05:32 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /home6/kestreli/public_html/admin/login.php on line 7
+[23-Aug-2018 00:05:38 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /home6/kestreli/public_html/admin/login.php on line 7
+[23-Aug-2018 00:07:00 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'kestrelinnovations.com'@'localhost' (using password: YES) in /home6/kestreli/public_html/admin/login.php on line 7
+[23-Aug-2018 00:07:33 America/Denver] PHP Notice:  Undefined variable: username in /home6/kestreli/public_html/admin/login.php on line 7
+[23-Aug-2018 00:07:33 America/Denver] PHP Notice:  Undefined variable: password in /home6/kestreli/public_html/admin/login.php on line 7
+[23-Aug-2018 00:07:33 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /home6/kestreli/public_html/admin/login.php on line 7
+[23-Aug-2018 00:14:18 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'kestrelinnovations.com_root'@'localhost' (using password: NO) in /home6/kestreli/public_html/admin/login.php on line 7
+[23-Aug-2018 00:17:08 America/Denver] PHP Parse error:  syntax error, unexpected 'or' (T_LOGICAL_OR) in /home6/kestreli/public_html/admin/login.php on line 7
+[23-Aug-2018 00:17:16 America/Denver] PHP Parse error:  syntax error, unexpected 'or' (T_LOGICAL_OR) in /home6/kestreli/public_html/admin/login.php on line 7
+[23-Aug-2018 00:17:51 America/Denver] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'kestrelinnovations.com_root'@'localhost' (using password: NO) in /home6/kestreli/public_html/admin/login.php on line 7
+[23-Aug-2018 00:23:50 America/Denver] PHP Warning:  mysqli_connect(): (HY000/2003): Can't connect to MySQL server on 'bluehost.com' (110) in /home6/kestreli/public_html/admin/login.php on line 7
+[23-Aug-2018 00:25:58 America/Denver] PHP Warning:  mysqli_connect(): (HY000/2003): Can't connect to MySQL server on 'kestrelinnovations.com.com' (110) in /home6/kestreli/public_html/admin/login.php on line 7
+[23-Aug-2018 00:29:22 America/Denver] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'kestrelinnovations.com_root'@'box798.bluehost.com' (using password: NO) in /home6/kestreli/public_html/admin/login.php on line 7
+[23-Aug-2018 00:29:58 America/Denver] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'kestrelinnovations.com'@'localhost' (using password: NO) in /home6/kestreli/public_html/admin/login.php on line 7
+[23-Aug-2018 00:30:01 America/Denver] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'kestrelinnovations.com'@'localhost' (using password: NO) in /home6/kestreli/public_html/admin/login.php on line 7
+[23-Aug-2018 00:35:26 America/Denver] PHP Warning:  mysqli_connect(): (HY000/2005): Unknown MySQL server host 'localhost:3306' (0) in /home6/kestreli/public_html/admin/login.php on line 7
+[23-Aug-2018 00:35:30 America/Denver] PHP Warning:  mysqli_connect(): (HY000/2005): Unknown MySQL server host 'localhost:3306' (0) in /home6/kestreli/public_html/admin/login.php on line 7
+[23-Aug-2018 00:35:38 America/Denver] PHP Warning:  mysqli_connect(): (HY000/2005): Unknown MySQL server host 'localhost:3306' (0) in /home6/kestreli/public_html/admin/login.php on line 7
+[23-Aug-2018 00:38:24 America/Denver] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'cpses_ke3o2w7hww@localhost'@'localhost' (using password: NO) in /home6/kestreli/public_html/admin/login.php on line 7
+[23-Aug-2018 00:38:30 America/Denver] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'cpses_ke3o2w7hww@localhost'@'localhost' (using password: NO) in /home6/kestreli/public_html/admin/login.php on line 7
+[23-Aug-2018 00:43:08 America/Denver] PHP Warning:  mysql_select_db(): Access denied for user 'root'@'localhost' (using password: NO) in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 00:43:08 America/Denver] PHP Warning:  mysql_select_db(): A link to the server could not be established in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 00:44:03 America/Denver] PHP Warning:  mysqli_select_db() expects exactly 2 parameters, 1 given in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 00:44:30 America/Denver] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'kestreli_admin_root'@'localhost' (using password: YES) in /home6/kestreli/public_html/admin/login.php on line 8
+[23-Aug-2018 00:44:55 America/Denver] PHP Warning:  mysqli_select_db() expects exactly 2 parameters, 1 given in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 00:47:28 America/Denver] PHP Catchable fatal error:  Object of class mysqli could not be converted to string in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 00:47:33 America/Denver] PHP Catchable fatal error:  Object of class mysqli could not be converted to string in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 00:49:25 America/Denver] PHP Warning:  mysql_select_db() expects parameter 1 to be string, resource given in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 00:49:30 America/Denver] PHP Warning:  mysql_select_db() expects parameter 1 to be string, resource given in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 00:50:00 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, string given in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 00:50:05 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, string given in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 00:50:14 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, string given in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 00:50:46 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, string given in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 00:51:57 America/Denver] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'kestreli_admin'@'localhost' to database 'kestreli_mydb' in /home6/kestreli/public_html/admin/login.php on line 8
+[23-Aug-2018 00:52:26 America/Denver] PHP Catchable fatal error:  Object of class mysqli could not be converted to string in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 00:52:30 America/Denver] PHP Catchable fatal error:  Object of class mysqli could not be converted to string in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 00:52:42 America/Denver] PHP Catchable fatal error:  Object of class mysqli could not be converted to string in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 00:53:02 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, string given in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 00:53:08 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, string given in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 00:53:12 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, string given in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 00:53:14 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, string given in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 00:53:30 America/Denver] PHP Catchable fatal error:  Object of class mysqli could not be converted to string in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 00:53:34 America/Denver] PHP Catchable fatal error:  Object of class mysqli could not be converted to string in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 00:53:40 America/Denver] PHP Catchable fatal error:  Object of class mysqli could not be converted to string in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 00:53:44 America/Denver] PHP Catchable fatal error:  Object of class mysqli could not be converted to string in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 00:54:00 America/Denver] PHP Catchable fatal error:  Object of class mysqli could not be converted to string in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 00:54:15 America/Denver] PHP Catchable fatal error:  Object of class mysqli could not be converted to string in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 00:56:43 America/Denver] PHP Catchable fatal error:  Object of class mysqli could not be converted to string in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 00:56:44 America/Denver] PHP Catchable fatal error:  Object of class mysqli could not be converted to string in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 00:56:46 America/Denver] PHP Catchable fatal error:  Object of class mysqli could not be converted to string in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 00:56:59 America/Denver] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, string given in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 01:08:03 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, string given in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 01:10:04 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, string given in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 01:59:20 America/Denver] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, string given in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 02:02:19 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'kestreli_admin_root'@'localhost' (using password: YES) in /home6/kestreli/public_html/admin/login.php on line 8
+[23-Aug-2018 02:02:59 America/Denver] PHP Warning:  mysql_select_db() expects parameter 1 to be string, resource given in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 02:03:38 America/Denver] PHP Warning:  mysql_select_db() expects parameter 1 to be string, resource given in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 02:03:43 America/Denver] PHP Warning:  mysql_select_db() expects parameter 1 to be string, resource given in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 02:09:25 America/Denver] PHP Warning:  mysql_select_db() expects parameter 1 to be string, resource given in /home6/kestreli/public_html/admin/login.php on line 9
+[23-Aug-2018 02:12:11 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home6/kestreli/public_html/admin/login.php on line 41
+[23-Aug-2018 02:12:16 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home6/kestreli/public_html/admin/login.php on line 41
+[23-Aug-2018 02:12:24 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home6/kestreli/public_html/admin/login.php on line 41
+[23-Aug-2018 02:12:31 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home6/kestreli/public_html/admin/login.php on line 41
+[23-Aug-2018 02:12:34 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home6/kestreli/public_html/admin/login.php on line 41
+[23-Aug-2018 02:12:53 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home6/kestreli/public_html/admin/login.php on line 41
+[23-Aug-2018 02:13:30 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home6/kestreli/public_html/admin/login.php on line 41
+[23-Aug-2018 02:33:50 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home6/kestreli/public_html/admin/login.php on line 41
+[23-Aug-2018 02:34:00 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home6/kestreli/public_html/admin/login.php on line 41
+[23-Aug-2018 02:35:12 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home6/kestreli/public_html/admin/login.php on line 41
+[23-Aug-2018 02:46:22 America/Denver] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home6/kestreli/public_html/admin/logout.php on line 4
+[23-Aug-2018 02:46:30 America/Denver] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home6/kestreli/public_html/admin/logout.php on line 4
+[23-Aug-2018 02:47:00 America/Denver] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home6/kestreli/public_html/admin/logout.php on line 2
+[23-Aug-2018 02:47:05 America/Denver] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home6/kestreli/public_html/admin/logout.php on line 2
+[23-Aug-2018 02:47:09 America/Denver] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home6/kestreli/public_html/admin/logout.php on line 2
+[23-Aug-2018 02:47:14 America/Denver] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home6/kestreli/public_html/admin/logout.php on line 2
+[23-Aug-2018 02:47:51 America/Denver] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home6/kestreli/public_html/admin/logout.php on line 2
+[23-Aug-2018 02:50:22 America/Denver] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home6/kestreli/public_html/admin/logout.php on line 4
+[23-Aug-2018 02:50:30 America/Denver] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home6/kestreli/public_html/admin/logout.php on line 4
+[23-Aug-2018 02:53:36 America/Denver] PHP Parse error:  syntax error, unexpected ';' in /home6/kestreli/public_html/admin/logout.php on line 4
+[23-Aug-2018 02:53:45 America/Denver] PHP Parse error:  syntax error, unexpected ';' in /home6/kestreli/public_html/admin/logout.php on line 4
+[23-Aug-2018 02:53:52 America/Denver] PHP Parse error:  syntax error, unexpected ';' in /home6/kestreli/public_html/admin/logout.php on line 4
+[23-Aug-2018 03:00:02 America/Denver] PHP Parse error:  syntax error, unexpected 'html' (T_STRING) in /home6/kestreli/public_html/admin/admin.php on line 4
+[23-Aug-2018 03:00:09 America/Denver] PHP Parse error:  syntax error, unexpected 'html' (T_STRING) in /home6/kestreli/public_html/admin/admin.php on line 4
+[23-Aug-2018 03:00:16 America/Denver] PHP Parse error:  syntax error, unexpected 'html' (T_STRING) in /home6/kestreli/public_html/admin/admin.php on line 4
+[23-Aug-2018 03:00:23 America/Denver] PHP Parse error:  syntax error, unexpected 'html' (T_STRING) in /home6/kestreli/public_html/admin/admin.php on line 4
+[27-Aug-2018 01:32:41 America/Denver] PHP Notice:  Undefined index: username in /home6/kestreli/public_html/admin/login.php on line 10
+[27-Aug-2018 01:32:41 America/Denver] PHP Notice:  Undefined index: password in /home6/kestreli/public_html/admin/login.php on line 11
+[28-Aug-2018 00:09:15 America/Denver] PHP Notice:  Undefined index: username in /home6/kestreli/public_html/admin/login.php on line 10
+[28-Aug-2018 00:09:15 America/Denver] PHP Notice:  Undefined index: password in /home6/kestreli/public_html/admin/login.php on line 11
+[14-Sep-2018 16:21:00 America/Denver] PHP Notice:  Undefined index: username in /home6/kestreli/public_html/admin/login.php on line 10
+[14-Sep-2018 16:21:00 America/Denver] PHP Notice:  Undefined index: password in /home6/kestreli/public_html/admin/login.php on line 11
+[16-Sep-2018 23:09:58 America/Denver] PHP Notice:  Undefined index: username in /home6/kestreli/public_html/admin/login.php on line 10
+[16-Sep-2018 23:09:58 America/Denver] PHP Notice:  Undefined index: password in /home6/kestreli/public_html/admin/login.php on line 11
